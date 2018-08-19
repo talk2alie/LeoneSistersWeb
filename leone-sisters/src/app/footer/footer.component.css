@@ -1,0 +1,17 @@
+footer {
+    color: white;
+    background-color: #03332B;
+    text-align: center;
+    max-height: 250px;
+    padding: 20px;
+}
+
+img {
+    max-width: 100px;
+    margin: auto;
+}
+
+p {
+    margin-top: 10px;
+}
+
