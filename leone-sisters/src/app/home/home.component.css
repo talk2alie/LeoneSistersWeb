@@ -46,6 +46,8 @@
     grid-gap: 0px;
     grid-template-columns: 20% 80%;
     color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    margin: 10px auto;
 }
 
 .event > div {
@@ -65,4 +67,12 @@
 
 .title {
     font-weight: bold;
+}
+
+.banner {
+    height: 250px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
 }
