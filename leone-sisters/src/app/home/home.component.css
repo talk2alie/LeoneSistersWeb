@@ -2,3 +2,67 @@
     width: 100%;
     height: auto;
 }
+
+.traits {
+    background-color: #FBFBFB;
+}
+
+.trait {
+    text-align: center;
+    padding: 40px 60px;
+}
+
+.trait > img {
+    max-width: 150px;
+}
+
+.trait > span {
+    display: block;
+    font-size: 3em;
+    color: #078B75;
+}
+
+.trait > p {
+    font-size: 1.5em;
+    color: #707070;
+}
+
+.testimonials{
+    background-color: #ECEFF0;
+}
+
+.events {
+    padding: 20px;
+    text-align: center;
+}
+
+.events > h1 {
+    margin: 0 auto 20px auto;
+}
+
+.event {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 0px;
+    grid-template-columns: 20% 80%;
+    color: white;
+}
+
+.event > div {
+    padding: 10px 5px;
+    text-align: center;
+}
+
+.date {
+    background-color: #044B3F;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.details {
+    background-color: #086C5B;
+}
+
+.title {
+    font-weight: bold;
+}
