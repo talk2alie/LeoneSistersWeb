@@ -14,6 +14,10 @@ export class HomeComponent implements OnInit {
 
     ngOnInit() {
         this.eventsService.getEvents()
-            .subscribe(events => this.events = events);
+            .subscribe(events => {
+                if (events.length > 0) {
+                    this.events = events;
+                }
+            });
     }
 }
