@@ -10,7 +10,7 @@ export class EventsService {
 
     constructor() { }
 
-    getEvents(): Observable<Event[]> {
+    getFiveUpcomingEventsInCurrentYear(): Observable<Event[]> {
         return of(EVENTS);
     }
 }

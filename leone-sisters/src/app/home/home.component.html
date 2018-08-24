@@ -88,11 +88,11 @@
         <div class="col-md-4">
             <div class="events">
                 <h1>Upcoming Events</h1>
-                <div *ngIf="!events" class="no-events">
+                <div *ngIf="!upcomingEvents" class="no-events">
                     <p class="text-info">No upcoming events to display...</p>
                 </div>
-                <div *ngIf="events">
-                    <div *ngFor="let event of events" class="event">
+                <div *ngIf="upcomingEvents">
+                    <div *ngFor="let event of upcomingEvents" class="event">
                         <div class="date">
                             <span [innerText]="event.date | date:'MMM'"></span><br>
                             <span>

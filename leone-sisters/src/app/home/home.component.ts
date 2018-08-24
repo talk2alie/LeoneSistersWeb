@@ -8,16 +8,28 @@ import { Event } from '../models/event';
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-    events: Event[];
+    upcomingEvents: Event[];
 
     constructor(private eventsService: EventsService) { }
 
     ngOnInit() {
-        this.eventsService.getEvents()
+        this.setUpcomingEvents();
+    }
+
+    private setUpcomingEvents() {
+        this.eventsService.getFiveUpcomingEventsInCurrentYear()
             .subscribe(events => {
-                if (events.length > 0) {
-                    this.events = events;
+                if (this.thereAreUpcomingEventsIn(events)) {
+                    this.setUpcomingEventsTo(events);
                 }
             });
+    }
+
+    private setUpcomingEventsTo(events: Event[]) {
+        this.upcomingEvents = events;
+    }
+
+    private thereAreUpcomingEventsIn(upcomingEvents: Event[]) {
+        return upcomingEvents && upcomingEvents.length > 0;
     }
 }
