@@ -88,98 +88,20 @@
         <div class="col-md-4">
             <div class="events">
                 <h1>Upcoming Events</h1>
-                <div class="event">
+                <div *ngFor="let event of events" class="event">
                     <div class="date">
-                        <span>Dev</span><br>
+                        <span [innerText]="event.date | date:'MMM'"></span><br>
                         <span>
-                            11
+                            {{event.date | date:'dd'}}
                         </span>
                     </div>
                     <div class="details">
-                        <span class="title">Shirley's Birthday</span>
+                        <span class="title" [innerText]="event.title"></span>
                         <br>
-                        <span>
-                            1322 Angora Ave, Lansdowne, PA 19050 @ 2:00 PM
-                        </span>
+                        <span [innerText]="event.location"></span>
                     </div>
                 </div>
-                <div class="event">
-                    <div class="date">
-                        <span>Dev</span><br>
-                        <span>
-                            11
-                        </span>
-                    </div>
-                    <div class="details">
-                        <span class="title">Shirley's Birthday</span>
-                        <br>
-                        <span>
-                            1322 Angora Ave, Lansdowne, PA 19050 @ 2:00 PM
-                        </span>
-                    </div>
-                </div>
-                <div class="event">
-                    <div class="date">
-                        <span>Dev</span><br>
-                        <span>
-                            11
-                        </span>
-                    </div>
-                    <div class="details">
-                        <span class="title">Shirley's Birthday</span>
-                        <br>
-                        <span>
-                            1322 Angora Ave, Lansdowne, PA 19050 @ 2:00 PM
-                        </span>
-                    </div>
-                </div>
-                <div class="event">
-                        <div class="date">
-                            <span>Dev</span><br>
-                            <span>
-                                11
-                            </span>
-                        </div>
-                        <div class="details">
-                            <span class="title">Shirley's Birthday</span>
-                            <br>
-                            <span>
-                                1322 Angora Ave, Lansdowne, PA 19050 @ 2:00 PM
-                            </span>
-                        </div>
-                    </div>
-                    <div class="event">
-                            <div class="date">
-                                <span>Dev</span><br>
-                                <span>
-                                    11
-                                </span>
-                            </div>
-                            <div class="details">
-                                <span class="title">Shirley's Birthday</span>
-                                <br>
-                                <span>
-                                    1322 Angora Ave, Lansdowne, PA 19050 @ 2:00 PM
-                                </span>
-                            </div>
-                        </div>
-                        <div class="event">
-                                <div class="date">
-                                    <span>Dev</span><br>
-                                    <span>
-                                        11
-                                    </span>
-                                </div>
-                                <div class="details">
-                                    <span class="title">Shirley's Birthday</span>
-                                    <br>
-                                    <span>
-                                        1322 Angora Ave, Lansdowne, PA 19050 @ 2:00 PM
-                                    </span>
-                                </div>
-                            </div>
             </div>
         </div>
     </div>
-
 </div>
