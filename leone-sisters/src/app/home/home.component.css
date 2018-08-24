@@ -47,6 +47,7 @@
     grid-template-columns: 20% 80%;
     color: white;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    background-color: #086C5B;
     margin: 10px auto;
 }
 
@@ -56,13 +57,9 @@
 }
 
 .date {
-    background-color: #044B3F;
+    background-color:  rgba(0, 0, 0, 0.3);
     font-weight: bold;
     font-size: 1.2em;
-}
-
-.details {
-    background-color: #086C5B;
 }
 
 .title {
@@ -80,7 +77,7 @@
 .testimonial {
     width: 100%;
     padding: 20px;
-    margin: auto  20px;
+    margin: auto;
     text-align: center;
 }
 
