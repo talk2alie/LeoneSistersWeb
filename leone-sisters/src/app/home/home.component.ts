@@ -16,20 +16,20 @@ export class HomeComponent implements OnInit {
         this.setUpcomingEvents();
     }
 
-    private setUpcomingEvents() {
+    private setUpcomingEvents(): void {
         this.eventsService.getFiveUpcomingEventsInCurrentYear()
-            .subscribe(events => {
-                if (this.thereAreUpcomingEventsIn(events)) {
-                    this.setUpcomingEventsTo(events);
+            .subscribe(serviceEvents => {
+                if (this.thereAreUpcomingEventsIn(serviceEvents)) {
+                    this.setUpcomingEventsTo(serviceEvents);
                 }
             });
     }
 
-    private setUpcomingEventsTo(events: Event[]) {
+    private setUpcomingEventsTo(events: Event[]): void {
         this.upcomingEvents = events;
     }
 
-    private thereAreUpcomingEventsIn(upcomingEvents: Event[]) {
-        return upcomingEvents && upcomingEvents.length > 0;
+    private thereAreUpcomingEventsIn(events: Event[]): boolean {
+        return events && events.length > 0;
     }
 }
