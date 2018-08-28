@@ -68,11 +68,32 @@
 }
 
 .banner {
-    height: 250px;
-    padding: 20px;
+    padding: 0px;
     margin: 20px;
-    background-color: #FFFFFF;
+    background-image: url(../../assets/single-mother.png);
+    background-position: center center;
+    background-size: cover;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.banner > div {
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(8, 108, 91, .96);
+    max-width: 50%;
+    margin-left: 50%;
+}
+
+.banner > div > span {
+    font-size: 2.5em;
+    display: block;
+    color: #FFFFFF;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.banner > div > p {
+    color: #FFFFFF;
 }
 
 .testimonial {
